@@ -13,7 +13,7 @@ export class ContentComponent {
 
   public ngOnInit(): void {}
 
-  public goBack(): void {
+  public navigateToSplashScreen(): void {
     this.router.navigate(['']);
   }
 }

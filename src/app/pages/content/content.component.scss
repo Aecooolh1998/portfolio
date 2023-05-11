@@ -1,11 +1,50 @@
-.center {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-}
+.container {
+    width: 100%;
+    height: 100%;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    overflow-x: hidden;
 
-.button-text {
-    padding-top: 10px;
+    section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: 100vh;
+        scroll-snap-align: start;
+
+        &:nth-of-type(1) {
+            background-color: rgb(255, 255, 255);
+            color: black;
+        }
+
+        &:nth-of-type(2) {
+            background-color: rgb(245, 245, 245);
+            color: black;
+        }
+
+        &:nth-of-type(3) {
+            background-color: rgb(235, 235, 235);
+            color: black;
+        }
+
+        &:nth-of-type(4) {
+            background-color: rgb(225, 225, 225);
+            color: black;
+        }
+
+        &:nth-of-type(5) {
+            background-color: rgb(215, 215, 215);
+            color: black;
+        }
+
+        .heading {
+            width: 100%;
+        }
+    }
+
+    h1 {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 5em;
+    }
 }

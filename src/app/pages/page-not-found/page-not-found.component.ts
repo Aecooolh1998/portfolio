@@ -16,7 +16,7 @@ export class PageNotFoundComponent {
 
   }
 
-  public goBack(): void {
+  public navigateToSplashScreen(): void {
       this.router.navigate(['']);
   }
 }
